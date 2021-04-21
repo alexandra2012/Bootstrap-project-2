@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <!-- bootstrap script -->
+    <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="margin-top:20px;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Menu</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./contacts.html" tabindex="-1">Contacts</a>
+                    </li>
+                 </ul>
+                 <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active item-1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Reine</h5>
+                  <p>Norway is one of the most amazing countries in the world.</p>
+                </div>
+              </div>
+              <div class="carousel-item item-2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lofoten Iclands</h5>
+                  <p>Lofoten is known for excellent fishing, nature attractions.</p>
+                </div>
+                </div>
+              <div class="carousel-item item-3">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Pulpit Rock (Preikestolen)</h5>
+                      <p>A tourist attraction best suited for the active traveler.</p>
+                  </div>
+              </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center"><br>
+                <h3>Contact form</h3> <br>          
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6 left-side">  
+            </div>
+
+            <div class="col-md-6" right-side>
+                <div class="contacts-form">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstName">First name:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="lastName">Last name:</label>
+                                <input type="text" class="form-control">  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p class="mb-0">Please check info:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                            <label class="form-check-label" for="flexCheckDisabled">
+                            Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexCheckCheckedDisabled">
+                              Disabled checked checkbox
+                            </label>
+                        </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="coments">Coments</label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group mb-0"><label for="">Nationality</label>
+                            <select class="form-control" name="" id="">
+                                <option value="">Norway</option>
+                                <option value="">England</option>
+                                <option value="">Germany</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group"><label for="">City</label>
+                            <select class="form-control"  name="" id="">
+                                <option value="">Bergen</option>
+                                <option value="">Bristol</option>
+                                <option value="">Frankfurt</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-sm-end">
+                          <div class="col-md-6 text-end"><br>
+                              <button type="button" class="btn btn-secondary">Reset</button>
+                              <button type="button" class="btn btn-primary">Confirm</button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://i.pinimg.com/600x315/d3/b1/eb/d3b1ebd42e920c1bb0764b09e06b08e6.jpg" class="card-img-top" alt="Trollstigen">
+              <div class="card-body">
+                <h5 class="card-title">Trollstigen</h5>
+                <p class="card-text">Trollstigen is a serpentine mountain road and pass in Rauma Municipality, Møre og Romsdal county, Norway. It is part of Norwegian County Road 63 that connects the town of Åndalsnes in Rauma.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://scubadiverlife.com/wp-content/uploads/2017/12/orcas_norway_featured-256x256.jpeg" class="card-img-top" alt="Tysfjord">
+              <div class="card-body">
+                <h5 class="card-title">Tysfjord</h5>
+                <p class="card-text">Tysfjord is a former municipality in Nordland county, Norway. The municipality existed from 1869 until its dissolution in 2020. The municipality was part of the traditional district of Ofoten.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://hi-cdn.t-rp.co.uk/images/hotels/3403749/3?width=870&height=480&crop=false" class="card-img-top" alt="Dombaas Hotel Lillehammer">
+              <div class="card-body">
+                <h5 class="card-title">Dombaas Hotel Lillehammer</h5>
+                <p class="card-text">Set on 3 hectares of park-like grounds, this modern hotel is a 9-minute walk from the Maihaugen open-air museum, 2 km from the Lysgårdsbakkene Olympic ski jump arena and 1 km from the Lillehammer train station.</p>
+                <a href="#" class="btn btn-primary">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://lafleurdevanille.files.wordpress.com/2015/07/norway-oslo-header-1.jpg?w=256&h=256&crop=1" class="card-img-top" alt="national gallery – La Fleur de Vanille">
+              <div class="card-body">
+                <h5 class="card-title">National gallery – La Fleur de Vanille</h5>
+                <p class="card-text">TFounded in 1837, the National Gallery houses Norway’s largest public collection of paintings, drawings and sculptures. In its permanent and temporary exhibitions.</p>
+                <a href="#" class="btn btn-primary">See more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

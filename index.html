@@ -11,9 +11,6 @@
     <!-- custom styling -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
-    <!-- bootstrap script -->
-    <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -85,7 +82,6 @@
          <div class="row">
             <div class="col-md-6 left-side">  
             </div>
-
             <div class="col-md-6" right-side>
                 <div class="contacts-form">
                     </div>
@@ -103,7 +99,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
@@ -127,7 +122,6 @@
                               Disabled checked checkbox
                             </label>
                         </div>
-
                         </div>
                       </div>
                       <div class="row">
@@ -137,8 +131,7 @@
                             <textarea name="" id="" class="form-control"></textarea>
                           </div>
                         </div>
-                      </div>
-
+                </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-group mb-0"><label for="">Nationality</label>
@@ -159,7 +152,6 @@
                           </div>
                         </div>
                       </div>
-
                       <div class="row justify-content-sm-end">
                           <div class="col-md-6 text-end"><br>
                               <button type="button" class="btn btn-secondary">Reset</button>
@@ -177,7 +169,9 @@
               <div class="card-body">
                 <h5 class="card-title">Trollstigen</h5>
                 <p class="card-text">Trollstigen is a serpentine mountain road and pass in Rauma Municipality, Møre og Romsdal county, Norway. It is part of Norwegian County Road 63 that connects the town of Åndalsnes in Rauma.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
               </div>
             </div>
           </div>
@@ -187,7 +181,9 @@
               <div class="card-body">
                 <h5 class="card-title">Tysfjord</h5>
                 <p class="card-text">Tysfjord is a former municipality in Nordland county, Norway. The municipality existed from 1869 until its dissolution in 2020. The municipality was part of the traditional district of Ofoten.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
               </div>
             </div>
           </div>
@@ -197,7 +193,9 @@
               <div class="card-body">
                 <h5 class="card-title">Dombaas Hotel Lillehammer</h5>
                 <p class="card-text">Set on 3 hectares of park-like grounds, this modern hotel is a 9-minute walk from the Maihaugen open-air museum, 2 km from the Lysgårdsbakkene Olympic ski jump arena and 1 km from the Lillehammer train station.</p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
               </div>
             </div>
           </div>
@@ -207,11 +205,73 @@
               <div class="card-body">
                 <h5 class="card-title">National gallery – La Fleur de Vanille</h5>
                 <p class="card-text">TFounded in 1837, the National Gallery houses Norway’s largest public collection of paintings, drawings and sculptures. In its permanent and temporary exhibitions.</p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
               </div>
             </div>
           </div>
         </div>
       </div>
+</body>
+</html>
+
+      <!-- Modal -->
+      <div class="modal fade" id="Trollstigen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TrollstigenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TrollstigenLabel">Trollstigen</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Tysfjord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TysfjordLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TysfjordLabel">Tysfjord</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Dombaas Hotel Lillehammer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Dombaas Hotel LillehammerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Dombaas Hotel LillehammerLabel">Dombaas Hotel Lillehammer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/jquery.js"></script>
+    
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="./assets/js/js.js"></script>
+     
 </body>
 </html>
